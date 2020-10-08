@@ -1,0 +1,212 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R1
+U 1 1 5F7EA608
+P 3960 2530
+F 0 "R1" V 3805 2485 50  0000 L CNN
+F 1 "470" V 3890 2455 50  0000 L CNN
+F 2 "" H 3960 2530 50  0001 C CNN
+F 3 "~" H 3960 2530 50  0001 C CNN
+	1    3960 2530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5F7EADD2
+P 4260 2525
+F 0 "R2" V 4095 2510 50  0000 L CNN
+F 1 "47 K" V 4185 2430 50  0000 L CNN
+F 2 "" H 4260 2525 50  0001 C CNN
+F 3 "~" H 4260 2525 50  0001 C CNN
+	1    4260 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5F7EAE08
+P 5080 2500
+F 0 "R3" V 4930 2450 50  0000 L CNN
+F 1 "47 K" V 5005 2405 50  0000 L CNN
+F 2 "" H 5080 2500 50  0001 C CNN
+F 3 "~" H 5080 2500 50  0001 C CNN
+	1    5080 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5F7EAE3E
+P 5380 2500
+F 0 "R4" V 5225 2450 50  0000 L CNN
+F 1 "470" V 5300 2420 50  0000 L CNN
+F 2 "" H 5380 2500 50  0001 C CNN
+F 3 "~" H 5380 2500 50  0001 C CNN
+	1    5380 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 5F7EB14E
+P 3425 3200
+F 0 "BT1" H 3533 3246 50  0000 L CNN
+F 1 "9 V" H 3533 3155 50  0000 L CNN
+F 2 "" V 3425 3260 50  0001 C CNN
+F 3 "~" V 3425 3260 50  0001 C CNN
+	1    3425 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F7EBB28
+P 3960 2130
+F 0 "D1" V 3999 2013 50  0000 R CNN
+F 1 "LED" V 3908 2013 50  0000 R CNN
+F 2 "" H 3960 2130 50  0001 C CNN
+F 3 "~" H 3960 2130 50  0001 C CNN
+	1    3960 2130
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F7ED0C6
+P 5380 2125
+F 0 "D2" V 5419 2008 50  0000 R CNN
+F 1 "LED" V 5328 2008 50  0000 R CNN
+F 2 "" H 5380 2125 50  0001 C CNN
+F 3 "~" H 5380 2125 50  0001 C CNN
+	1    5380 2125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5F7ED65C
+P 4110 2870
+F 0 "C1" V 3980 2870 50  0000 C CNN
+F 1 "47 uF" V 3905 2870 50  0000 C CNN
+F 2 "" H 4110 2870 50  0001 C CNN
+F 3 "~" H 4110 2870 50  0001 C CNN
+	1    4110 2870
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3960 1970 3960 1980
+Wire Wire Line
+	5380 1970 5380 1975
+Wire Wire Line
+	5380 2400 5380 2275
+Wire Wire Line
+	5080 2400 5080 1970
+Connection ~ 5080 1970
+Wire Wire Line
+	5080 1970 5380 1970
+Wire Wire Line
+	3425 3000 3425 1970
+Wire Wire Line
+	3425 1970 3960 1970
+Connection ~ 3960 1970
+Wire Wire Line
+	3960 2280 3960 2430
+Wire Wire Line
+	3960 1970 4260 1970
+Wire Wire Line
+	3960 2870 3960 2630
+Wire Wire Line
+	4260 2625 4260 2868
+Wire Wire Line
+	4260 2425 4260 1970
+$Comp
+L Transistor_BJT:Transistori_NPN_1 Q1
+U 1 1 5F7EB1B9
+P 3990 3340
+F 0 "Q1" H 3930 3490 50  0000 L CNN
+F 1 "Transistori_NPN_1" H 3660 3010 50  0000 L CNN
+F 2 "" H 3990 3340 50  0001 C CNN
+F 3 "" H 3990 3340 50  0001 C CNN
+	1    3990 3340
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4260 1970 5080 1970
+Connection ~ 4260 1970
+Wire Wire Line
+	3960 3200 3960 2870
+Connection ~ 3960 2870
+Wire Wire Line
+	3425 3400 3425 3775
+Wire Wire Line
+	3960 3595 3960 3600
+Wire Wire Line
+	3425 3775 3960 3775
+Connection ~ 3960 3775
+Wire Wire Line
+	3960 3775 5380 3775
+Connection ~ 3960 3600
+Wire Wire Line
+	3960 3600 3960 3775
+Wire Wire Line
+	5080 3418 4568 3418
+Wire Wire Line
+	4568 3418 4568 2868
+Wire Wire Line
+	4568 2868 4260 2868
+Connection ~ 4260 2868
+Wire Wire Line
+	4260 2868 4260 2870
+$Comp
+L Transistor_BJT:transistor_NPN_2 Q2
+U 1 1 5F7F40CF
+P 5340 3268
+F 0 "Q2" H 5470 3164 50  0000 L CNN
+F 1 "transistor_NPN_2" H 5470 3073 50  0000 L CNN
+F 2 "" H 5340 3268 50  0001 C CNN
+F 3 "" H 5340 3268 50  0001 C CNN
+	1    5340 3268
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 5F7EDF21
+P 5230 2740
+F 0 "C2" V 5365 2740 50  0000 C CNN
+F 1 "47 uF" V 5445 2740 50  0000 C CNN
+F 2 "" H 5230 2740 50  0001 C CNN
+F 3 "~" H 5230 2740 50  0001 C CNN
+	1    5230 2740
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5380 3615 5380 3618
+Connection ~ 5380 3618
+Wire Wire Line
+	5380 3618 5380 3775
+Wire Wire Line
+	5380 2740 5380 2600
+Wire Wire Line
+	5380 3220 5380 3218
+Connection ~ 5380 2740
+Connection ~ 5380 3218
+Wire Wire Line
+	5380 3218 5380 2740
+Wire Wire Line
+	5080 2600 5080 2740
+Wire Wire Line
+	4260 3400 5030 3400
+Wire Wire Line
+	5030 3400 5030 2740
+Wire Wire Line
+	5030 2740 5080 2740
+Connection ~ 5080 2740
+$EndSCHEMATC

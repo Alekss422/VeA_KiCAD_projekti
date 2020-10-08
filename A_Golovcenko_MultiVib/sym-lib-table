@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/Lib/New_Library.lib)(options "")(descr ""))
+  (lib (name Transistor_NPN_1)(type Legacy)(uri ${KIPRJMOD}/Lib/Transistor_NPN_1.lib)(options "")(descr ""))
+  (lib (name Transistor_NPN_2)(type Legacy)(uri ${KIPRJMOD}/Lib/Transistor_NPN_2.lib)(options "")(descr ""))
+)
