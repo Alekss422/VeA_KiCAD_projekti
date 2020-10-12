@@ -1,0 +1,79 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1250 1550 2305 1465
+U 5F848987
+F0 "Sheet5F848986" 50
+F1 "220 V .sch" 50
+F2 "Vcc" I R 3555 2210 50 
+F3 "GND" I R 3555 2490 50 
+F4 "Power_in" I L 1250 2045 50 
+F5 "Power_in_2" I L 1250 2145 50 
+$EndSheet
+$Sheet
+S 3975 1035 2170 3340
+U 5F859289
+F0 "Sheet5F859288" 50
+F1 "ALL VOLTAGE REGULATORS.sch" 50
+F2 "VCC" I L 3975 2210 50 
+F3 "GND" I L 3975 2490 50 
+F4 "3,3V" I R 6145 2340 50 
+F5 "5V" I R 6145 2435 50 
+F6 "9V" I R 6145 2540 50 
+F7 "12V" I R 6145 2640 50 
+$EndSheet
+Wire Wire Line
+	3975 2210 3555 2210
+Wire Wire Line
+	3555 2490 3975 2490
+$Comp
+L Connector:Screw_Terminal_01x04 J4
+U 1 1 5F864133
+P 7000 2440
+F 0 "J4" H 7080 2386 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 7080 2341 50  0001 L CNN
+F 2 "" H 7000 2440 50  0001 C CNN
+F 3 "~" H 7000 2440 50  0001 C CNN
+	1    7000 2440
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2440 6145 2440
+Wire Wire Line
+	6145 2440 6145 2435
+Wire Wire Line
+	6145 2540 6800 2540
+Wire Wire Line
+	6145 2340 6800 2340
+Wire Wire Line
+	6145 2640 6800 2640
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 5F86B0C1
+P 905 2145
+F 0 "J8" H 910 1920 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 823 1911 50  0001 C CNN
+F 2 "" H 905 2145 50  0001 C CNN
+F 3 "~" H 905 2145 50  0001 C CNN
+	1    905  2145
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 2045 1105 2045
+Wire Wire Line
+	1250 2145 1105 2145
+$EndSCHEMATC
