@@ -110,8 +110,8 @@ Connection ~ 5760 4070
 Wire Wire Line
 	5760 4070 7000 4070
 Wire Wire Line
-	5760 3490 5760 4070
-Wire Wire Line
 	5460 3190 4380 3190
 Connection ~ 4380 3190
+Wire Wire Line
+	5760 4070 5760 3490
 $EndSCHEMATC
