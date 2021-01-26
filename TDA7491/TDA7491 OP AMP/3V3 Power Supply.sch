@@ -1,0 +1,149 @@
+EESchema Schematic File Version 4
+LIBS:TDA7491 OP AMP-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C29
+U 1 1 5F97E67F
+P 3470 4870
+F 0 "C29" H 3220 4870 50  0000 L CNN
+F 1 "2.2uF" H 3240 4790 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3508 4720 50  0001 C CNN
+F 3 "~" H 3470 4870 50  0001 C CNN
+	1    3470 4870
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5F97EC6C
+P 3470 5110
+F 0 "#PWR0120" H 3470 4860 50  0001 C CNN
+F 1 "GND" H 3475 4937 50  0000 C CNN
+F 2 "" H 3470 5110 50  0001 C CNN
+F 3 "" H 3470 5110 50  0001 C CNN
+	1    3470 5110
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 5F97F1A9
+P 4520 4830
+F 0 "R13" H 4579 4876 50  0000 L CNN
+F 1 "9.1K" H 4579 4785 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4520 4830 50  0001 C CNN
+F 3 "~" H 4520 4830 50  0001 C CNN
+	1    4520 4830
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM78L12_TO92 IC2
+U 1 1 5F9821E3
+P 3900 4650
+F 0 "IC2" H 3900 4892 50  0000 C CNN
+F 1 "3V3 " H 3900 4801 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3900 4875 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf" H 3900 4600 50  0001 C CNN
+	1    3900 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3470 4720 3470 4650
+Wire Wire Line
+	3470 4650 3600 4650
+Wire Wire Line
+	3470 5110 3470 5020
+$Comp
+L power:GND #PWR0121
+U 1 1 5F983E98
+P 3900 5060
+F 0 "#PWR0121" H 3900 4810 50  0001 C CNN
+F 1 "GND" H 3905 4887 50  0000 C CNN
+F 2 "" H 3900 5060 50  0001 C CNN
+F 3 "" H 3900 5060 50  0001 C CNN
+	1    3900 5060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5060 3900 4950
+$Comp
+L Device:C C9
+U 1 1 5F984790
+P 4280 4880
+F 0 "C9" H 4140 4960 50  0000 L CNN
+F 1 "100nF" H 4170 4880 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4318 4730 50  0001 C CNN
+F 3 "~" H 4280 4880 50  0001 C CNN
+	1    4280 4880
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5F985643
+P 4830 4650
+F 0 "R8" V 4970 4650 50  0000 C CNN
+F 1 "2.2K" V 4900 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4830 4650 50  0001 C CNN
+F 3 "~" H 4830 4650 50  0001 C CNN
+	1    4830 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4730 4650 4520 4650
+Wire Wire Line
+	4280 4730 4280 4650
+Connection ~ 4280 4650
+Wire Wire Line
+	4280 4650 4200 4650
+Wire Wire Line
+	4520 4730 4520 4650
+Connection ~ 4520 4650
+Wire Wire Line
+	4520 4650 4280 4650
+$Comp
+L power:GND #PWR0122
+U 1 1 5F986138
+P 4280 5080
+F 0 "#PWR0122" H 4280 4830 50  0001 C CNN
+F 1 "GND" H 4285 4907 50  0000 C CNN
+F 2 "" H 4280 5080 50  0001 C CNN
+F 3 "" H 4280 5080 50  0001 C CNN
+	1    4280 5080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5F9863BD
+P 4520 5060
+F 0 "#PWR0123" H 4520 4810 50  0001 C CNN
+F 1 "GND" H 4525 4887 50  0000 C CNN
+F 2 "" H 4520 5060 50  0001 C CNN
+F 3 "" H 4520 5060 50  0001 C CNN
+	1    4520 5060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4280 5080 4280 5030
+Wire Wire Line
+	4520 5060 4520 4930
+Text HLabel 5010 4650 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	5010 4650 4930 4650
+Text HLabel 3470 4530 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	3470 4650 3470 4530
+Connection ~ 3470 4650
+$EndSCHEMATC

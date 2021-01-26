@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Spole)(type Legacy)(uri ${KIPRJMOD}/Apzimejumi/Spole.lib)(options "")(descr ""))
+  (lib (name Bluetooth)(type Legacy)(uri ${KIPRJMOD}/Apzimejumi/Bluetooth.lib)(options "")(descr ""))
+  (lib (name "5 V stabilizators")(type Legacy)(uri "${KIPRJMOD}/Apzimejumi/5 V stabilizators.lib")(options "")(descr ""))
+)
